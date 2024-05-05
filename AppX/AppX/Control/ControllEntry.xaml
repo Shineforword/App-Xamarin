@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppX.Control.ControllEntry">
+    <!--
+    CursorPosition 光标位置
+    SelectionLength 光标位置开始选择文本
+    Keyboard 交互键盘
+    -->
+    <ContentPage.Content>
+        <Entry Text="设置光标位置"
+               TextColor="DarkMagenta"
+               Placeholder="请输入..."
+               PlaceholderColor="red"
+               CursorPosition="1"
+               SelectionLength="3"
+               Keyboard="Telephone"
+               TextChanged="Entry_TextChanged"
+               x:Name="entry_01"
+               >
+        </Entry>
+    </ContentPage.Content>
+</ContentPage>
+

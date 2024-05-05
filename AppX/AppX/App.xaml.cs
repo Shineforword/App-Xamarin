@@ -13,8 +13,8 @@ namespace AppX
 
             //MainPage = new MainPage();
             //MainPage = new ControllLabel();
-            MainPage = new ControllButton();
-
+            //MainPage = new ControllButton();
+            MainPage = new ControllEntry();            
         }
 
         protected override void OnStart ()
