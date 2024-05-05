@@ -1,4 +1,5 @@
 ﻿using System;
+using AppX.Control;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,8 @@ namespace AppX
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new ControllLabel();
         }
 
         protected override void OnStart ()

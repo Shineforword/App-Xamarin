@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppX.Control.ControllLabel">
+    <!--CharacterSpacing 字间距-->
+    <!--FontAttributes 加粗等-->
+    <!--TextDecorations 下划线删除线等-->
+    <!--LineBreakMode 换行等-->
+    <!--Margin 左上右下-->
+
+        <Label Text="我是标签我是word is long long long more than old ,my thanks for you "
+               TextColor="Red"
+               FontSize="15"
+               Margin="15,64,15,10"
+               TextTransform="Lowercase"
+               CharacterSpacing="1"
+               FontAttributes="Bold"
+               TextDecorations="Underline"
+               LineBreakMode="WordWrap"
+               >
+        <Label.FormattedText>
+            <FormattedString>
+                <FormattedString.Spans>
+                    <Span Text="words" TextColor="Green"></Span>
+                                        <Span Text="is" TextColor="Red"></Span>
+
+                    <Span Text="is" TextColor="Red"></Span>
+                    <Span Text="long" TextColor="Blue"></Span>
+                </FormattedString.Spans>
+
+            </FormattedString>
+
+        </Label.FormattedText>
+
+    </Label>
+</ContentPage>
+

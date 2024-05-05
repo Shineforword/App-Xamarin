@@ -1,25 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppX.MainPage">
+<!--根元素:指定父类
+    (1)每个xmal文件只有一个根元素,根元素用来指定xaml的父类
+    (2)在根元素中
+        1定义引用的命名空间
+        2定义类名(x:Class = "")类名必须与c#文件中的类名保持一致,并且必须要有所属的命名空间
+ xmlns="http://xamarin.com/schemas/2014/forms",引入Xamarin.Forms命名空间
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"引入Xamarin规范命名空间
+ x:Class="AppX.MainPage" 定义类名
+-->
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
-    </StackLayout>
-
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppX.MainPage">
+    <!--xaml文件主要定义界面,每个xaml文件需绑定2个C#文件.cs/.g.cs-->
+    <!--Content可以省略不写-->
+    <ContentPage.Content>
+            <!--Button 对象元素,对象元素是一个对象 常用view属性 / 旋转等 -->
+        <Button Text="Button" BackgroundColor="Red"
+                WidthRequest="100"
+                HeightRequest="60"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                Opacity="0.5"
+                >
+        </Button>
+    </ContentPage.Content>
 </ContentPage>
 
