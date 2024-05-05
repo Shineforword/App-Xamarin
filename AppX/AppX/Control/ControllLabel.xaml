@@ -19,19 +19,18 @@
                TextDecorations="Underline"
                LineBreakMode="WordWrap"
                >
-        <Label.FormattedText>
+        <!--<Label.FormattedText>
             <FormattedString>
                 <FormattedString.Spans>
                     <Span Text="words" TextColor="Green"></Span>
-                                        <Span Text="is" TextColor="Red"></Span>
-
+                    <Span Text="is" TextColor="Red"></Span>
                     <Span Text="is" TextColor="Red"></Span>
                     <Span Text="long" TextColor="Blue"></Span>
                 </FormattedString.Spans>
 
             </FormattedString>
 
-        </Label.FormattedText>
+        </Label.FormattedText>-->
 
     </Label>
 </ContentPage>

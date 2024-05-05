@@ -21,4 +21,10 @@
   <ItemGroup>
     <Folder Include="Control\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Control\MyPage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Control\MyPage.xaml" />
+  </ItemGroup>
 </Project>

@@ -12,7 +12,9 @@ namespace AppX
             InitializeComponent();
 
             //MainPage = new MainPage();
-            MainPage = new ControllLabel();
+            //MainPage = new ControllLabel();
+            MainPage = new ControllButton();
+
         }
 
         protected override void OnStart ()
