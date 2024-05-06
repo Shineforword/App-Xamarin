@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppX.Control.ControllConverter">
+<!--字符串转换成需要的属性值 转换类,或者类自身提供转换(例如:FormattedText)-->
+    <ContentPage.Content>
+        <Label Text="red"
+               TextColor="Red"
+               FontSize="45"
+               FormattedText="saff"
+               >
+        </Label>
+    </ContentPage.Content>
+</ContentPage>
+

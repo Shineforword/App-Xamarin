@@ -17,14 +17,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Control\" />
+    <None Remove="Control\localIcon.png" />
+    <None Remove="Layout\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Control\" />
+    <Folder Include="Layout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Control\MyPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Control\MyPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Remove="Control\MyPage.xaml" />
+    <EmbeddedResource Include="Control\localIcon.png" />
   </ItemGroup>
 </Project>

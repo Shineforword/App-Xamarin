@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppX.Control.ControllListView">
+    <ContentPage.Content>
+    <!--
+        ListView
+        ItemsSource:指定列表数据
+        ItemTemplate:定义每一行中的数据模板
+        内置单元格:
+        TextCell:用于显示文本
+        ImageCell:
+        SwitchCell:开关
+        EntryCell:用户编辑文本
+        事件:
+        ItemSelected:
+        ItemTapped:点击项时触发
+        -->
+        <ListView x:Name="listStudents" ItemTapped="listStudents_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <!---->
+                    <TextCell Text="{Binding Name}" Detail="{Binding ID}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
+

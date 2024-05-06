@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppX.Control.ControllImage">
+    <ContentPage.Content>
+    <!--Source (本地文件,嵌入资源,下载或从流中加载)
+        安卓和iOS可以加载不同的资源(拖放同名文件引用)
+        属性生成操作设置:
+        Android:AndroidResource
+        iOS:BundleResource
+        不同平台相同图片资源,属性生成操作选择嵌入的资源(embeddedResource)
+        Fill:拉伸填满容器,显示完整图像
+        AspectFill:剪辑不拉伸填充显示区域,同时保持比例,无扭曲,图片可能不完整
+        AspectFit:拉伸使图像适应显示区域,同时保持比例,无扭曲,显示完整图像
+        -->
+        <Image x:Name="localIcon"
+               BackgroundColor = "Blue"
+               Aspect="AspectFit"
+            ></Image>
+    </ContentPage.Content>
+</ContentPage>
+

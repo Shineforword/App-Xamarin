@@ -14,7 +14,7 @@ namespace AppX.Control
 
         void Entry_TextChanged(System.Object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
-			entry_01.Text = "1111111";
+			Console.WriteLine(entry_01.Text);
         }
     }
 }
