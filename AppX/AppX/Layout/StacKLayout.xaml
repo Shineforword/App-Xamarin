@@ -4,13 +4,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="AppX.Layout.StacKLayout">
     <ContentPage.Content>
-        <!-- Spacing:控件之间的距离
-
+        <!--
+        默认垂直排列
+        Spacing:控件之间的距离             
         -->
-         <StackLayout BackgroundColor="Blue" Spacing="0">
+         <StackLayout BackgroundColor="Blue" Spacing="0" Orientation="Horizontal">
             <Label Text="标签" FontSize="30" BackgroundColor="Red"></Label>
             <Button Text="按钮" BackgroundColor="Yellow"></Button>
-             <Label Text="标签" HorizontalOptions="Center" HeightRequest="100" FontSize="30" BackgroundColor="Red"></Label>
+             <Label Text="标签" VerticalOptions="Center" HeightRequest="100" FontSize="30" BackgroundColor="Red"></Label>
          </StackLayout >  
     </ContentPage.Content>
 </ContentPage>

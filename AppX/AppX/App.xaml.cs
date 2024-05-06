@@ -19,11 +19,14 @@ namespace AppX
             //MainPage = new ControllConverter();
             //MainPage = new ControllImage();
             //MainPage = new ControllListView();
-            MainPage = new StacKLayout();
+            //MainPage = new StacKLayout();
+
+            MainPage = new LayoutGrid();
         }
 
         protected override void OnStart ()
         {
+
         }
 
         protected override void OnSleep ()

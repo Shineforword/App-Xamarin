@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppX.Layout.LayoutGrid">
+    <ContentPage.Content>
+        <!-- 跨列/跨行: ColumnSpan /  RowSpan -->
+        <Grid RowSpacing="0" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="haha" BackgroundColor="red"></Label>
+            <Label Grid.Row="0" Grid.Column="1" Text="ha" BackgroundColor="Blue"></Label>
+            <Button Grid.Row="1" Grid.Column="0" Text="ha" BackgroundColor="GreenYellow"></Button>
+            <Button Grid.Row="1" Grid.Column="1" Text="ha" BackgroundColor="SteelBlue"></Button>
+            <Button Grid.Row="2" Grid.ColumnSpan="2" Text="ha" BackgroundColor="Red"></Button>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+
