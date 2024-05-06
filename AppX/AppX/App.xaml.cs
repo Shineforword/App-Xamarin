@@ -21,7 +21,8 @@ namespace AppX
             //MainPage = new ControllListView();
             //MainPage = new StacKLayout();
 
-            MainPage = new LayoutGrid();
+            //MainPage = new LayoutGrid();
+            MainPage = new LayoutAbosluteLayout();
         }
 
         protected override void OnStart ()
